@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kitchens | Southern Cut Construction &amp; Remodeling</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="site-header">
+  <a class="brand" href="index.html" aria-label="Southern Cut home">
+    <img src="assets/images/scc-logo.png" alt="Southern Cut Construction & Remodeling logo">
+  </a>
+  <button class="menu-toggle" aria-label="Open menu" onclick="document.querySelector('.main-nav').classList.toggle('open')">☰</button>
+  <nav class="main-nav">
+    <a href="index.html">Home</a>
+    <div class="dropdown">
+      <a href="projects.html">Projects <span class="chev">▾</span></a>
+      <div class="dropdown-menu">
+        <a href="decks-patios.html">Decks &amp; Patios</a>
+        <a href="kitchens.html">Kitchens</a>
+        <a href="custom-work.html">Custom Work</a>
+      </div>
+    </div>
+    <a class="estimate-nav" href="estimate.html">Get an Estimate</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+</header>
+
+<main>
+<section class="page-hero"><p class="eyebrow">PROJECTS</p><h1>Kitchens</h1><p>Kitchen updates and remodels designed around your home.</p></section>
+<section class="content-section">
+
+<h2 class="section-title gallery-title">More Kitchens Projects</h2>
+<div class="gallery"><img src="assets/images/kitchen-1.jpg" alt="Kitchens project"><img src="assets/images/kitchen-2.jpg" alt="Kitchens project"><img src="assets/images/kitchen-3.jpg" alt="Kitchens project"><img src="assets/images/cabinet-1.jpg" alt="Kitchens project"><img src="assets/images/cabinet-2.jpg" alt="Kitchens project"><img src="assets/images/cabinet-3.jpg" alt="Kitchens project"><img src="assets/images/cabinet-4.jpg" alt="Kitchens project"><img src="assets/images/bathroom-black-shower.jpg" alt="Kitchens project"><img src="assets/images/bathroom-tile-shower.jpg" alt="Kitchens project"></div>
+</section></main>
+
+<footer class="site-footer">
+  <div class="footer-grid">
+    <section>
+      <h3>Southern Cut Construction &amp; Remodeling</h3>
+      <p class="footer-motto">A Cut Above the Rest</p>
+      <p>ESTD 2020 • Licensed &amp; Insured</p>
+    </section>
+    <section>
+      <h4>Contact</h4>
+      <p>Paden: <a href="tel:+17069360435">706-936-0435</a></p>
+      <p>Jordan: <a href="tel:+17069360757">706-936-0757</a></p>
+      <p><a href="mailto:southern.cutcr@gmail.com">southern.cutcr@gmail.com</a></p>
+    </section>
+    <section>
+      <h4>Serving</h4>
+      <p>Rome, Georgia</p>
+      <p>Northwest Georgia &amp; surrounding areas</p>
+    </section>
+    <section>
+      <h4>Follow</h4>
+      <a class="facebook" href="https://www.facebook.com/SouthernCutCR" target="_blank" rel="noopener">Facebook ↗</a>
+    </section>
+  </div>
+  <div class="footer-bottom">© Southern Cut Construction &amp; Remodeling • ESTD 2020</div>
+</footer>
+
+<script>
+document.addEventListener("click", function(e) {
+  const photo = e.target.closest(".gallery img, .ba-photo img");
+  if (!photo) return;
+  const box = document.createElement("div");
+  box.className = "lightbox";
+  box.innerHTML = '<button aria-label="Close">×</button><img src="' + photo.src + '" alt="' + photo.alt + '">';
+  box.addEventListener("click", () => box.remove());
+  document.body.appendChild(box);
+});
+</script>
+</body>
+</html>

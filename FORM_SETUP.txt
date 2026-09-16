@@ -1,0 +1,17 @@
+FORM SETUP
+Create the form in Formspree, then copy the endpoint Formspree gives you.
+Open estimate.html and replace:
+YOUR_FORMSPREE_ENDPOINT
+with the endpoint, such as:
+https://formspree.io/f/xxxxxxxx
+
+The estimate form includes:
+Name
+Phone Number
+Email
+Project Type
+Project Location
+Project Description
+
+Facebook:
+https://www.facebook.com/SouthernCutCR
